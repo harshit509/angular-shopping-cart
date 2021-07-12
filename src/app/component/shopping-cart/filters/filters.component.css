@@ -1,0 +1,16 @@
+.button{
+    border: 5px solid #15f4ee;
+    text-align: center;
+     width: 150px;
+     /* padding: 10px; */
+     /* font-size: 35px; */
+     color: #15f4ee;
+     font-family: poppins;
+     font-weight:400px;
+     text-transform: uppercase;
+     border-radius: 100px;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: 1.5s;
+     background: black;
+}

@@ -1,0 +1,36 @@
+.login-wrapper{
+    margin: 3rem auto;
+    width: 25rem;
+    height: 50rem;
+}
+input{
+    margin-bottom: 2rem;
+
+}
+.card-body{
+    background-image:url('../../assets/first.jpg');
+
+}
+.danger{
+    color: chartreuse;
+}
+
+input.ng-touched.ng-invalid{
+    border-color: red;
+}
+.touched{
+color:blue;
+font-size: medium;
+}
+#class {
+    /* The image used */
+    background-image: url('../../assets/download.jpg');
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

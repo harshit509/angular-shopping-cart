@@ -1,0 +1,8 @@
+#font{
+    font-family: "Times New Roman", Times, serif;
+    font-style: oblique;
+    /* font-size:; */
+    font-weight: bold;
+    font-variant: small-caps;
+    text-transform: uppercase;
+}

@@ -1,0 +1,41 @@
+.login-wrapper{
+    margin: 3rem auto;
+    width: 30rem;
+}
+input{
+    margin-bottom: 2rem;
+
+}
+.card-body{
+background-image: url('../../assets/first.jpg');
+}
+.danger{
+    color: chartreuse;
+}
+
+.float-right:hover{
+    color:red;
+    cursor:pointer;
+}
+input.ng-touched.ng-invalid{
+    border-color: red;
+}
+.touched{
+    color:red;
+}
+body, html {
+    height: 100%;
+  }
+
+  #class {
+    /* The image used */
+    background-image: url('../../assets/download.jpg');
+  
+    /* Full height */
+    height: 130%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

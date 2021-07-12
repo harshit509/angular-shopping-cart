@@ -1,0 +1,49 @@
+<div id="class">
+  <div class="style">
+    <h1 [ngStyle]="{'text-align':'center','color':'gray','font-style':'oblique'}">
+  full-mart
+    <img [src]="'http://charislms.com/images/slogin.png '" [ngStyle]="{'width':'130px'}"alt="">
+  </h1>
+  </div>
+  
+  
+    <div class="login-wrapper">
+      <div class="card">
+        <div class="card-body">
+  
+          <div class="container">
+  
+            <h2 class="danger">login</h2>
+            <form  #loginform="ngForm" (ngSubmit)="loginuser()">
+              <small class="text-danger">{{msg}}</small>
+              <div class="form-group">
+                <label  class="danger"for="email">username:</label>
+                <input type="name" class="form-control"  placeholder="Enter username" name="username"[(ngModel)]="user.username"
+                required ngModel>
+              </div>
+              <div class="form-group">
+                <label for="pwd" class="danger">Password:</label>
+                <input type="password" class="form-control"  placeholder="Enter password" name="pwd" [(ngModel)]="user.password"
+                #password="ngModel" required ngModel minlength="8">
+               
+                <div   class="touched" *ngIf="password.touched">
+                  <p *ngIf="password.errors?.required">password is a required field!</p>
+                  <p *ngIf="password.errors?.minlength">minimum 8 number required</p>
+              </div>
+             
+             
+              </div> 
+  
+              <div class="checkbox">
+                <label class="danger"><input type="checkbox" name="remember" > Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-info" >Submit</button>
+            </form>
+            <strong class="float-right danger" [routerLink]="['/registeration']"> new user ? REGISTER HERE</strong>
+          </div>
+        </div>
+      </div>
+    
+  
+  
+</div>
